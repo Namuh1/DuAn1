@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Themnguoidung"></activity>
+        <activity android:name=".Listnguoidung"></activity>
+        <activity android:name=".Login"></activity>
+        <activity android:name=".NguoiDungDetailActivity"></activity>
+        <activity android:name=".Theloai"></activity>
+        <activity android:name=".Theloaidetail"></activity>
+
+
     </application>
 
 </manifest>
