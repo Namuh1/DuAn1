@@ -1,14 +1,13 @@
 package com.example.myapplication.Dulieu;
 
-public class Theloai {
+public class TheLoai {
     private String maTheloai;
     private String tenTheloai;
     private String moTa;
     private String viTri;
-    public Theloai(){
-
+    public TheLoai() {
     }
-    public Theloai(String maTheloai, String tenTheloai, String moTa,String viTri) {
+    public TheLoai(String maTheloai, String tenTheloai, String moTa,String viTri) {
         this.maTheloai = maTheloai;
         this.tenTheloai = tenTheloai;
         this.moTa = moTa;

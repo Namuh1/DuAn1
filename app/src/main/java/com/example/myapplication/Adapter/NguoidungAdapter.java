@@ -11,17 +11,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.DAO.NguoidungDAO;
-import com.example.myapplication.Dulieu.Nguoidung;
+import com.example.myapplication.Dulieu.NguoiDung;
 import com.example.myapplication.R;
 
 import java.util.List;
 
 public class NguoidungAdapter extends BaseAdapter {
-    List<Nguoidung> arrNguoiDung;
+    List<NguoiDung> arrNguoiDung;
     public Activity context;
     public LayoutInflater inflater;
     NguoidungDAO nguoiDungDAO;
-    public NguoidungAdapter(Activity context, List<Nguoidung> arrayNguoiDung) {
+    public NguoidungAdapter(Activity context, List<NguoiDung> arrayNguoiDung) {
         super();
         this.context = context;
         this.arrNguoiDung = arrayNguoiDung;
@@ -54,10 +54,10 @@ public class NguoidungAdapter extends BaseAdapter {
         {
             holder = new ViewHolder();
             convertView = inflater.inflate(R.layout.nguoidungitem, null);
-            holder.img = (ImageView) convertView.findViewById(R.id.ivIcon);
-            holder.txtName = (TextView) convertView.findViewById(R.id.tvName);
-            holder.txtPhone = (TextView) convertView.findViewById(R.id.tvPhone);
-            holder.imgDelete = (ImageView)convertView.findViewById(R.id.ivDelete);
+            holder.img =  convertView.findViewById(R.id.ivIcon);
+            holder.txtName =  convertView.findViewById(R.id.tvName);
+            holder.txtPhone =  convertView.findViewById(R.id.tvPhone);
+            holder.imgDelete = convertView.findViewById(R.id.ivDelete);
             holder.imgDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -71,7 +71,7 @@ public class NguoidungAdapter extends BaseAdapter {
         }
         else
             holder=(ViewHolder)convertView.getTag();
-        Nguoidung _entry = (Nguoidung) arrNguoiDung.get(position);
+        NguoiDung _entry = (NguoiDung) arrNguoiDung.get(position);
         if (position % 3 ==0) {
             holder.img.setImageResource(R.drawable.emone);
         }else if (position % 3 == 1){
@@ -83,7 +83,7 @@ public class NguoidungAdapter extends BaseAdapter {
         holder.txtPhone.setText(_entry.getPhone());
         return convertView;
     }
-    public void changeDataset(List<Nguoidung> items){
+    public void changeDataset(List<NguoiDung> items){
         this.arrNguoiDung = items;
         notifyDataSetChanged();
     }

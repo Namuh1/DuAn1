@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Listtheloai">
+    tools:context=".ListTheLoaiActivity">
     <ListView
         android:id="@+id/lvTheLoai"
         android:layout_width="match_parent"

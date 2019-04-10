@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Manager Manga"
+        android:label="Manager Book"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -16,13 +16,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"></activity>
-        <activity android:name=".Themnguoidung"></activity>
-        <activity android:name=".Listnguoidung"></activity>
-        <activity android:name=".Login"></activity>
-        <activity android:name=".NguoiDungDetailActivity"></activity>
-        <activity android:name=".Theloai"></activity>
-        <activity android:name=".Theloaidetail"></activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ChangePass" />
+        <activity android:name=".ListNguoiDungActivity" />
+        <activity android:name=".ThemNguoiDungActivity" />
+        <activity android:name=".NguoiDungDetailActivity" />
+        <activity android:name=".ListTheLoaiActivity" />
+        <activity android:name=".TheLoai" />
+        <activity android:name=".TheLoaiDetailActivity" />
+        <activity android:name=".ListSachActivity" />
+        <activity android:name=".Themsach" />
+        <activity android:name=".SachDetailActivity" />
+        <activity android:name=".ListHoaDonActivity" />
+        <activity android:name=".ThemHoaDonActivity" />
+        <activity android:name=".HoaDonDetailActivity" />
+        <activity android:name=".HoaDonChiTiet" />
+        <activity android:name=".ListThongKeActivity" />
+        <activity android:name=".ListBanChayActivity"></activity>
+
 
 
     </application>

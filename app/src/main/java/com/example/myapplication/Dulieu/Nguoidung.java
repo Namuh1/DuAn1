@@ -1,19 +1,19 @@
 package com.example.myapplication.Dulieu;
 
-public class Nguoidung {
+public class NguoiDung {
     private String userName;
     private String password;
     private String phone;
     private String hoTen;
-    public Nguoidung() {
+    public NguoiDung() {
     }
-    public Nguoidung(String userName, String password, String phone, String hoTen) {
+    public NguoiDung(String userName, String password, String phone, String hoTen) {
         this.userName = userName;
         this.password = password;
         this.phone = phone;
         this.hoTen = hoTen;
     }
-    public Nguoidung(String userName, String password){
+    public NguoiDung(String userName, String password){
         this.userName = userName;
         this.password = password;
     }

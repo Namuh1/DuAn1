@@ -8,7 +8,7 @@ import android.util.Log;
 
 
 import com.example.myapplication.Database.DatabaseHelper;
-import com.example.myapplication.Dulieu.Nguoidung;
+import com.example.myapplication.Dulieu.NguoiDung;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class NguoidungDAO {
         db = dbHelper.getWritableDatabase();
     }
 
-    public int inserNguoiDung(Nguoidung nd) {
+    public int inserNguoiDung(NguoiDung nd) {
         ContentValues values = new ContentValues();
         values.put("username", nd.getUserName());
         values.put("password", nd.getPassword());
@@ -41,12 +41,12 @@ public class NguoidungDAO {
         return 1;
     }
 
-    public List<Nguoidung> getAllNguoiDung() {
-        List<Nguoidung> dsNguoiDung = new ArrayList<>();
+    public List<NguoiDung> getAllNguoiDung() {
+        List<NguoiDung> dsNguoiDung = new ArrayList<>();
         Cursor c = db.query(TABLE_NAME, null, null, null, null, null, null);
         c.moveToFirst();
         while (c.isAfterLast() == false) {
-            Nguoidung ee = new Nguoidung();
+            NguoiDung ee = new NguoiDung();
             ee.setUserName(c.getString(0));
             ee.setPassword(c.getString(1));
             ee.setPhone(c.getString(2));
@@ -60,7 +60,7 @@ public class NguoidungDAO {
     }
 
 
-    public int updateNguoiDung(Nguoidung nd) {
+    public int updateNguoiDung(NguoiDung nd) {
         ContentValues values = new ContentValues();
         values.put("username", nd.getUserName());
         values.put("password", nd.getPassword());
@@ -74,7 +74,7 @@ public class NguoidungDAO {
         return 1;
     }
 
-    public int changePasswordNguoiDung(Nguoidung nd) {
+    public int changePasswordNguoiDung(NguoiDung nd) {
         ContentValues values = new ContentValues();
         values.put("username", nd.getUserName());
         values.put("password", nd.getPassword());
@@ -85,7 +85,7 @@ public class NguoidungDAO {
         return 1;
     }
 
-    public int changePassword(Nguoidung nd) {
+    public int changePassword(NguoiDung nd) {
         ContentValues values = new ContentValues();
         values.put("password", nd.getPassword());
         int result = db.update(TABLE_NAME, values, "password=?", new String[]{nd.getPassword()});

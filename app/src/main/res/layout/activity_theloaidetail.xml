@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@android:color/white"
     android:layout_margin="15dp"
-    tools:context=".Theloaidetail">
+    tools:context=".TheLoaiDetailActivity">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="352dp"
@@ -79,13 +79,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="updateU"
             android:text="Cập nhật" />
         <Button
             android:id="@+id/btnCance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
+            android:onClick="Huy"
             android:text="Quay lại" />
     </LinearLayout>
 </LinearLayout>

@@ -7,7 +7,7 @@
     android:layout_margin="15dp"
     android:background="@android:color/white"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -27,7 +27,7 @@
         android:paddingBottom="3dp"
         android:text="ĐĂNG NHẬP"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/ColorBlue"
         android:textSize="24sp" />
 
     <EditText

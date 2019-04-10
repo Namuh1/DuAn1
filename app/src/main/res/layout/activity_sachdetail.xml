@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@android:color/white"
     android:layout_margin="15dp"
-    tools:context=".Sachdetail">
+    tools:context=".SachDetailActivity">
 
     <TextView
         android:id="@+id/text"
@@ -102,12 +102,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="capsua"
             android:text="Cập nhật" />
         <Button
             android:id="@+id/btnCancesua"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="quaysua"
             android:text="Quay lại" />
     </LinearLayout>
 
